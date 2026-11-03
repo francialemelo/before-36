@@ -229,7 +229,7 @@
 </div>
 
 <script>
-  const SHEET_URL = 'https://script.google.com/macros/s/AKfycbyXzOkun6YEK61x7a8gt7TCMEqext1dSot8-SkoG0SqewPC1uvrgBb-OjeIpcEz_FNOBA/exec';
+  const SHEET_URL = 'https://script.google.com/macros/s/AKfycbw35GmhjyYOPZ40wXew7KhqkWMdH_eDrHUkwVEPN-KSpY9Z8uooma8uIqSyeRW_wxBXdw/exec';
 
   async function enviar(e) {
     e.preventDefault();
@@ -247,7 +247,7 @@
         method: 'POST',
         mode: 'no-cors',
         headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-        body: JSON.stringify({ nome, sugestao })
+        body: JSON.stringify({ nome, mensagem })
       });
 
       document.getElementById('form').style.display = 'none';
